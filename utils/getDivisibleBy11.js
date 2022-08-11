@@ -6,3 +6,10 @@
 //2.	Input: [6, 33, 10, 9, 55]
 //Output: 2
 //3.	Input: [21, 2, 11, 70, 132]
+
+const getDivisibleBy11 = (numbers) => {
+  return numbers.reduce((previous, current) => {
+    return current % 11 === 0 ? (previous += 1) : previous;
+  }, 0);
+};
+module.exports = getDivisibleBy11;
